@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Такси по городам Беларуси
+{% endblock %}
+
+{% block content_title %}
+Такси по городам Беларуси
+{% endblock %}
+
+{% block content %}
+<p>Республика Беларусь - это прекрасная и живописная страна, которая расположена в Восточной Европе. И, граничит со странами Литвы, Польши, Латвии, Украины и России.На нашем сайте, вы можете заказать трансфер или такси для поездки по Беларуси и за ее пределами.&nbsp;</p>
+<p>В Беларуси много лечебно-оздоровительных санаторий,усадьбы для отдыха, исторические места, замки.&nbsp;&nbsp;</p>
+<p>Сердцем Республики Беларусь является великолепный и самый крупный город Минск. Всего 6 областных городов: Минск, Брест, Гомель, Гродно, Витебск, Могилев.&nbsp;</p>
+<p>Наши официальные и лицензионные автомобили такси с комфортом(при необходимости с детским креслом) и по честной цене доставят в любой уголок Республики Беларусь, а водители встретят с табличкой на вокзале или аэропорту.&nbsp;</p>
+<p><strong>Желаем приятных поездок и отличного настроения</strong>!&nbsp;</p>
+
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Минская Область
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body dropdown-item">
+         <form action="/dududki">Такси Минск - Дудутки от 100 рублей
+<button class="btn btn-success">подробнее..</button>
+</form>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         Брестская Область
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+       
+      <div class="card-body dropdown-item">
+         <form action="/brest">Такси Минск - Брест от 235 рублей
+<button class="btn btn-success">подробнее..</button>
+</form>
+      </div>
+
+      <div class="card-body dropdown-item">
+         <form action="/stolin">Такси Минск - Столин от 205 рублей
+<button class="btn btn-success">подробнее..</button>
+</form>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Разворачиваемая панель #3
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

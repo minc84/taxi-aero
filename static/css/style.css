@@ -1,0 +1,35 @@
+
+.nav-item{
+    color: #000;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 16px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    display: block !important;
+}
+.nav-item dropdown{
+    color: #000;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 16px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    display: block !important;
+}
+.nav-link{
+    color: #000;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 16px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    }
+.nav-link disabled{
+    color: #000;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 16px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    }

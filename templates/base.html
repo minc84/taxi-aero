@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-site-verification" content="ZJp2ener1qogoaeGmKLGv6K0XnIxPxn6XCrhRXYfwIc" />
+<meta name="yandex-verification" content="d25ac6695155e67c" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for("static", filename="css/style.css") }}"/>
+
+    <title>
+    {% block title %}
+
+        {% endblock %}
+    </title>
+</head>
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light  sticky-top" style="background-color:#f7c614;">
+      <a href="/" class="navbar-brand"><img src="https://www.svgrepo.com/show/39554/taxi-sign.svg" width="60" height="60" alt="logo"></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item active">
+        <a class="nav-link" href="/">Главная <span class="sr-only">(current)</span></a>
+      </li>
+
+
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Услуги
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="aeroport-minsk2">Такси в/из аэропорт минск-2 </a>
+            <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="arenda-micro">Аренда микроавтобуса в Минске</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="arenda-bus">Аренда автобуса в Минске</a>
+        </div>
+      </li>
+
+
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Трансфер
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="city">Такси по городам Беларуси </a>
+            <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="grodno">Такси в Гродно </a>
+            <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="brest">Такси в Брест</a>
+		  <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="gomel">Такси в Гомель</a>
+		  <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="vitebsk">Такси в Витебск</a>
+		  <div class="dropdown-divider"></div>
+		  <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="mogilev">Такси в Могилев</a>
+		  <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="dududki">Такси в Дудутки</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="lida">Такси в Лиду</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href='pinsk'>Такси в Пинск</a>
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="slon">Такси в Слоним</a>
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="stolin">Такси в Столин</a>
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="volko">Такси в Волковыск</a>
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="zlob">Такси в Жлобин</a>
+          <div class="dropdown-divider"></div>
+
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link disabled" href="contact">Реквизиты</a>
+      </li>
+
+    </ul>
+<div class="container">
+  <div class="row text-center justify-content-center ">
+  <img src="{{ url_for("static", filename="images/logo/viber.png") }}" width="120" height="60" alt="viber">+375 29 622 10 66<br/>
+  +375 29 292 61 10
+</div>
+</div>
+  </div>
+</nav>
+<div class="container">
+<div class="row">
+    <h1>{% block content_title %}
+    {% endblock %}
+    </h1>
+</div>
+{% block content %}
+{% endblock %}
+
+
+</div>
+
+<footer>
+<hr/>
+  <div class="container ">
+    <div class="row text-center justify-content-center">
+
+
+<address>
+    Tel:‎‎+375 29 622 10 66<br/>
+    ‎+375 29 292 61 10<br/>
+    Email:posst84@mail.ru<br/>
+ г.Минск  ул Алтайская 90, корп 1<br/>
+ИП Мартинчик А.В. УНН 192760476<br/>
+</address>
+      </div>
+
+
+    </div>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(51806255, "init", { id:51806255, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/51806255" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+body{
+  height: 2500px;
+}
+
+.navbar ul li a {
+text-decoration: none;
+color: black;
+}
